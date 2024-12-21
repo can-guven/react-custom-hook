@@ -1,0 +1,28 @@
+{
+  "name": "react-custom-hooks",
+  "version": "1.0.0",
+  "description": "This package provides some useful custom hooks.",
+  "type": "module",
+  "source": "index.js",
+  "exports": {
+    "require": "./dist/index.cjs",
+    "default": "./dist/index.modern.js"
+  },
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.module.js",
+  "unpkg": "./dist/index.umd.js",
+  "scripts": {
+    "build": "microbundle --external react",
+    "dev": "microbundle --external react"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "microbundle": "^0.15.1",
+    "react": "^19.0.0"
+  },
+  "peerDependencies": {
+    "react": ">=16.8.0"
+  }
+}
