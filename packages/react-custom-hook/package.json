@@ -1,5 +1,5 @@
 {
-  "name": "react-custom-hooks",
+  "name": "@root/react-custom-hooks",
   "version": "1.0.0",
   "description": "This package provides some useful custom hooks.",
   "type": "module",

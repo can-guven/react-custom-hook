@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { isServer } from "../utils";
 
-const useLocalStorage = (key, initialValue) => {
+export const useLocalStorage = (key, initialValue) => {
   const [value, setValue] = useState(() => {
     if (isServer()) {
       return initialValue;
@@ -20,5 +20,3 @@ const useLocalStorage = (key, initialValue) => {
 
   return [value, setValue];
 };
-
-export default useLocalStorage;
